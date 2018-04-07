@@ -16,8 +16,8 @@ for row = 1:(h-1)
     i(idx) = i(idx-1);
     j(idx-1) = h*(session-1)+row;
     j(idx) = j(idx-1)+1;
-    v(idx-1) = 1;
-    v(idx) = -1;
+    v(idx-1) = 1/2;
+    v(idx) = -1/2;
     
 end
 end
@@ -33,8 +33,8 @@ for row = (1):h
         i(R) = i(R-1);
         j(R-1) = row+h*(c-1);
         j(R) = j(R-1)+h;
-        v(R-1) = -1;
-        v(R) = 1;
+        v(R-1) = -1/2;
+        v(R) = 1/2;
     end
 end
 
